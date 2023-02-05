@@ -6,10 +6,7 @@ let logger = require('morgan');
 
 let indexRouter = require('./routes');
 let usersRouter = require('./routes/users');
-let aboutRouter = require('./routes/about');
-let servicesRouter = require('./routes/services');
-let contactRouter = require('./routes/contactme');
-let projectsRouter = require('./routes/projects');
+
 
 let app = express();
 
@@ -25,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
 app.use('/', indexRouter);
-app.use('/users', indexRouter);
+app.use('/users',usersRouter);
 app.use('/about', indexRouter);
 app.use('/services', indexRouter);
 app.use('/contactme', indexRouter);
