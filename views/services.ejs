@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./partials/head'); %>
+</head>
+<body class="container">
+
+  <header> 
+    <!--Partial for main navigation-->
+    <%- include('./partials/header'); %>
+  </header>
+  <div id="result" class="jumbotron">
+      <h1><%= title %></h1>
+      <div class="list-group col-sm-8">
+        <a href="#" class="list-group-item list-group-item-action active">
+          The list of services offered are as follows:
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">General Programming <img src="Assests/program.png" alt="img" class="rounded w-25 float-right"/></a>
+        <a href="#" class="list-group-item list-group-item-action">Web Development <img src="Assests/web.png" alt="img" class="rounded w-25 float-right"/></a>
+        <a href="#" class="list-group-item list-group-item-action">Game-Programming <img src="Assests/game.png" alt="img" class="rounded w-25 float-right"/></a>
+        <a href="#" class="list-group-item list-group-item-action disabled">Mobile Programming <img src="Assests/mobile.png" alt="img" class="rounded w-25 float-right"/></a>
+      </div>
+      <!--Script section-->
+      <script src="/jquery/dist/jquery.min.js"></script>
+      <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="/Scripts/appscripts.js"></script>
+  </div>
+
+  <footer>
+    <%- include('./partials/footer'); %>
+  </footer>
+  
+</body>
+</html>

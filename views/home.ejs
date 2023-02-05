@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./partials/head'); %>
+</head>
+<body class="container">
+
+  <header> 
+    <!--Partial for main navigation-->
+    <%- include('./partials/header'); %>
+  </header>
+  <div id="result" class="jumbotron">
+      <h1><%= title %></h1>
+      <p>Welcome! I'm thrilled to have you here. MY goal is to provide a warm and friendly environment where you can feel comfortable and connected. 
+        If you need anything, don't hesitate to reach out. I'm here to help</p>
+      <h2>Mission Statement</h2>
+      <p>My mission is to provide top-quality products and services that exceed customer expectations. 
+        I aim to achieve this through continuous innovation, dedicated customer support, 
+        and a commitment to ethical business practices. To find out more about me click below.</p>
+      <!--Script section-->
+      <script src="/jquery/dist/jquery.min.js"></script>
+      <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="/Scripts/appscripts.js"></script>
+      <button id="thebutton" onClick = show() ></a>Click Here</button>
+  </div>
+
+  <footer>
+    <%- include('./partials/footer'); %>
+  </footer>
+  
+</body>
+</html>

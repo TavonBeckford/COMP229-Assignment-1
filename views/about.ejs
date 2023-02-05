@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./partials/head'); %>
+</head>
+<body class="container">
+
+  <header> 
+    <!--Partial for main navigation-->
+    <%- include('./partials/header'); %>
+  </header><main>
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="jumbotron" id="jumbo">
+            <h1>About Michael Beckford</h1>
+            <p>Hi, my name is Michael Beckford. I live in Toronto, Canada. 
+              After completing my Bachelors in Computer Science, my passion for gaming eventually led to my arrival at Centennial College
+              to pursue Game-Programming.
+            </p>
+            <a href="Assests/Michael Beckford Resume General.pdf" download>
+                <button id="btn"> Resume Download Link</button>
+            </a>
+        </div>
+      </div>
+    
+      <div class="col-sm-4">
+        <div class="well">
+            <img src="Assests/headshot.jpg" alt="img" class="rounded-circle w-75 mt-4 ml-4"/>
+        </div>
+      </div>
+    </div>
+    </main>
+  <footer>
+    <%- include('./partials/footer'); %>
+  </footer>
+  
+</body>
+</html>
