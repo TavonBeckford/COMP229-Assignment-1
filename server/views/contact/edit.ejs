@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+  <header> 
+    <!--Partial for main navigation-->
+    <%- include('../partials/header'); %>
+  </header>
+  <div id="result" class="jumbotron">
+      <script src="/jquery/dist/jquery.min.js"></script>
+      <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="/Scripts/appscripts.js"></script>
+      <div class="container">
+        <div class="row">
+            <div class="offset-md-3 col-md-6">
+                <h1><%=title%></h1>
+                <form class="form" method="POST">
+                    <div class="form group">
+                        <label for="nameTextField">Contact Name</label>
+                        <input type="text" class="form-control"
+                        id="nameTextField"
+                        placeholder="Enter Contact Name"
+                        name="contactname" 
+                        value="<%=contact.contactname%>"
+                        required>
+                        </div>
+                        
+                        <div class="form group">
+                        <label for="numberTextField">Contact Number</label>
+                        <input type="number" class="form-control"
+                        id="numberTextField"
+                        placeholder="Enter Contact's Number"
+                        name="contactnumber"
+                        value="<%=contact.contactnumber%>"
+                        required>
+                        </div>
+
+                        <div class="form group">
+                        <label for="emailTextField">Email</label>
+                        <input type="text" class="form-control"
+                        id="emailTextField"
+                        placeholder="Enter Contact's Email"
+                        name="email" 
+                        value="<%=contact.email%>"
+                        required>
+                        </div>
+                        <br>
+                        <button class="btn btn-primary" type="submit"><i class="fas fa-edit"></i>submit</button>
+                        <a href="/contactList" class="btn btn-warning"><i class="fas fa-undo"></i>cancel</a>
+    
+                    </form>
+                </div>
+    
+            </div>
+        </div>
+
+  </div>
+
+  <footer>
+    <%- include('../partials/footer'); %>
+  </footer>
+  
+</body>
+</html>
